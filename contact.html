@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIKKEZ-home</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <script src=""></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+  </style>
+
+</head>
+ <body>
+  <div class="project-container">
+    <!-- landing-page-starts -->
+    <div class="landing-page">
+      <!-- navbar-starts-->
+      <nav class="py-3 my-creation-nav">
+        <div class="logo">
+          <a href="">VIKEEZ</a>
+        </div>
+        <ul>
+          <li> <img src="/images/house-solid.svg" alt="" class="img-of-navbar"><a href="/index.html">Home</a> </li>
+          <li><img src="/images/address-card-regular.svg" alt="" class="img-of-navbar"><a href="/aboutme.html">About Me</a></li>
+          <li><img src="/images/file-solid.svg" alt="" class="img-of-navbar"><a href="/portfolio.html">Portfolio</a></li>
+          <li><img src="/images/slack.svg" alt="" class="img-of-navbar"><a href="">Testimonial</a></li>
+          <li><img src="/images/address-book-solid.svg" alt="" class="img-of-navbar"><a href="/images/contact.html">Contact</a></li>
+        </ul>
+    
+        <div class="menu">
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+        </div>
+      </nav>
+      <!-- navbar-ends -->
+      <!--contact-page-starts-->
+      <div class="cotainer-fluid mt-5 first-div">
+        <div class="row  justify-content-center">
+          <div class="col-8">
+            <form>
+              <h5 class="card-title text-center my-name">Contact</h5>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Full name</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-1 mb-5"><button type="submit" class="btn btn-primary">Submit</button></div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+      <!-- contact-page-ends -->
+ 
+     
+    
+    </div>
+    
+  </div>
+
+
+
+
+  <script>
+    const menu = document.querySelector('.menu')
+    const menulist = document.querySelector('nav ul')
+    menu.addEventListener('click',()=>{
+      menulist.classList.toggle('showmenu')
+    })
+  </script>
+
+
+</body>
+</html>

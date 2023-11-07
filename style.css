@@ -1,0 +1,189 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@800&family=Skranji&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;800&family=Skranji&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+:root{
+  --primaryColor:#053b50;
+  --secondaryColor:#176b87;
+  --lightColor:#64ccc5;
+  --extraColor:#eeeeee;
+}
+/* :root{
+  --primaryColor:#1A5D1A;
+  --secondaryColor:#176b87;
+  --lightColor:#64ccc5;
+  --extraColor:#eeeeee;
+} */
+
+
+
+
+
+.img-of-navbar{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  align-items: baseline;
+}
+li{
+  display: flex;
+  flex-direction: row;
+}
+
+nav{
+  background-color: #eeeeee;
+  font-size: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 5px 10px 5px var(--secondaryColor);
+
+}
+
+nav li{
+  display: inline-block;
+  margin: 0 8px;
+  font-family: 'Skranji', cursive;
+
+}
+
+nav a{
+  text-decoration: none;
+  color: var(--secondaryColor);
+  margin-top: 10px ;
+ 
+ 
+}
+.logo{
+  font-size: 36px;
+  font-weight: bolder;
+  font-family: 'Baloo Paaji 2', cursive;
+}
+
+.logo a{
+  color: var(--primaryColor);
+}
+
+nav a:hover{
+  border-bottom: 5px solid #64ccc5;
+  transition: 0.3s;
+  color: var(--lightColor);
+}
+.menu-line{
+  height: 3px;
+  width: 20px;
+  background-color: black;
+  margin-bottom: 3px;
+}
+
+.menu{
+  display: none;
+  cursor: pointer;
+}
+main{
+  display: flex;
+  background-color: linear-gradient(to top red,blue);
+}
+.my-images-1{
+ width: 25em;
+ filter: drop-shadow(10px 10px 10px #176b87);
+ /* margin-top: -20px; */
+}
+h1{
+  font-size: 7rem;
+  font-family: 'Skranji', cursive;
+  color: var(--primaryColor);
+}
+
+.my-pics1{
+  border: 3px solid #64ccc5;
+  background-color: #64ccc5;
+}
+
+.my-name{
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Skranji', cursive;
+  color: var(--lightColor);
+  /* margin-top: 2em; */
+ }
+
+ .Vignesh-ravi{
+  color: var(--primaryColor);
+
+ }
+ .role{
+  font-size: 1.5em;
+  font-weight: bold;
+ }
+
+ .about-page-card{
+  border: none;
+ }
+
+ .general-button{
+  background-color: var(--secondaryColor);
+  color: white;
+ }
+ .general-button:hover{
+  background-color: var(--primaryColor);
+  color: white;
+ }
+ .resume{
+  width: 100%;
+  text-align: center;
+}
+button a{
+  text-decoration: none;
+  color: white;
+}
+.my-creation-nav{
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+.first-div{
+  margin-top: 10em !important;
+}
+
+
+
+@media all and (max-width:640px){
+  
+  nav{
+    flex-direction: column;
+  }
+  nav li{
+    display: block;
+    margin: 10px 0;
+  }
+  ul{
+    text-align: center;
+    padding: 0;
+    display: none;
+  }
+  .logo{
+    align-self: flex-start;
+    margin: 10px 0px 0px 30px;
+  }
+  .menu{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+  }
+  .showmenu{
+    display: block;
+  } 
+  .my-images-1{
+    width: 100%;
+   }
+}
